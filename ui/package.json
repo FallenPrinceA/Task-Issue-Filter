@@ -2,9 +2,9 @@
   "name": "COP2836",
   "version": "1.0.0",
   "description": "COP2836 Course File",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon -w server -e js,graphql server/server.js",
+    "start": "nodemon -w .env uiserver.js",
     "compile": "babel src --out-dir public",
     "watch": "babel src --out-dir public --watch --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,10 +13,8 @@
   "license": "ISC",
   "homepage": " ",
   "dependencies": {
-    "apollo-server-express": "^2.14.3",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "graphql": "^15.1.0",
-    "mongodb": "^3.5.9",
     "nodemon": "^1.18.9"
   },
   "devDependencies": {
